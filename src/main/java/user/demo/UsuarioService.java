@@ -1,3 +1,11 @@
+package user.demo;
+
+import java.util.Optional;
+
+import org.springframework.stereotype.Service;
+
+import lombok.RequiredArgsConstructor;
+
 @Service
 @RequiredArgsConstructor
 public class UsuarioService {
@@ -8,7 +16,7 @@ public class UsuarioService {
     }
 
     public Usuario obtenerUsuario(Long id) {
-        return usuarioRepository.findById(id).orElse(null);
+        return ((Optional<Usuario>) usuarioRepository.findById(id)).orElse(null);
     }
 
     public void eliminarUsuario(Long id) {
