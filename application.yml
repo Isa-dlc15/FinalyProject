@@ -1,0 +1,7 @@
+spring.data.mongodb.uri=mongodb://localhost:5432/reservas_db
+
+spring.datasource.url=jdbc:mysql://localhost:5432/reservas_db
+spring.datasource.username=root
+spring.datasource.password=Isa.dlc/2008?
+spring.jpa.hibernate.ddl-auto=update
+spring.jpa.show-sql=true
